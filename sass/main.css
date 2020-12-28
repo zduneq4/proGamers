@@ -18,6 +18,30 @@ body {
   color: #039dff;
 }
 
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #039dff;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.scroll-fix::before {
+  content: '';
+  display: block;
+  height: 66px;
+  margin-top: -66px;
+}
+
 nav {
   text-transform: uppercase;
   transition: background-color .6s;
@@ -50,6 +74,7 @@ nav .active {
 
 header {
   color: #fff;
+  overflow: hidden;
 }
 
 header h1 {
@@ -96,6 +121,28 @@ header .btn-outline-light {
 
 header .fa-caret-down {
   display: none;
+}
+
+#aboutus i {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+#aboutus h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#aboutus p {
+  font-size: 14px;
+}
+
+#aboutus .aboutus-hover {
+  transition: color 0.3s;
+}
+
+#aboutus .aboutus-hover:hover {
+  color: #039dff;
 }
 
 @media (min-width: 375px) {
