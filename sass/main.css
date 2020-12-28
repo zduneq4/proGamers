@@ -146,6 +146,28 @@ header .fa-caret-down {
   color: #039dff;
 }
 
+#aboutus-hero {
+  color: #ddd;
+}
+
+#aboutus-hero .bg-light {
+  position: relative;
+  background-image: url("../img/about-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+#aboutus-hero .about-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
