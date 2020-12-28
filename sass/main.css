@@ -139,6 +139,7 @@ header .fa-caret-down {
 
 #aboutus .aboutus-hover {
   transition: color 0.3s;
+  visibility: hidden;
 }
 
 #aboutus .aboutus-hover:hover {
