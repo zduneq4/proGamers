@@ -23,7 +23,6 @@ body
     background-color: $color-blue
 
 .wrapper
-
     width: 80%
     margin: 0 auto
 
@@ -169,6 +168,52 @@ header
     .underline
         position: relative
         bottom: 30px
+
+#prices
+    .bg-light
+        background-color: #f9f9f9
+
+    .price-wrap
+        max-width: 2560px
+        width: 95% !important
+        margin: 0 auto
+
+    .price-box
+        margin: 20px 10px
+        padding: 30px
+        background-color: #fff
+        box-shadow: 5px 5px 5px rgba(0,0,0,.6)
+        transition: transform .3s
+
+    h2
+        text-align: center
+
+        h3
+            color: $color-blue
+            text-transform: uppercase
+
+        span
+            font-weight: bold
+
+        i
+            padding: 0 5px
+            font-size: 23px
+
+        button
+            position: relative
+            left: 50px
+            padding: 10px 20px
+            text-transform: uppercase
+
+        .price
+            font-size: 30px
+            font-weight: bold
+
+    .price-box:hover
+        transform: scale(1.05)
+
+    .price-text
+        margin-top: 30px
 
 @media (min-width: 375px)
     header

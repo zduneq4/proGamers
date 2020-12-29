@@ -202,6 +202,62 @@ header .fa-caret-down {
   bottom: 30px;
 }
 
+#prices .bg-light {
+  background-color: #f9f9f9;
+}
+
+#prices .price-wrap {
+  max-width: 2560px;
+  width: 95% !important;
+  margin: 0 auto;
+}
+
+#prices .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  transition: transform .3s;
+}
+
+#prices h2 {
+  text-align: center;
+}
+
+#prices h2 h3 {
+  color: #039dff;
+  text-transform: uppercase;
+}
+
+#prices h2 span {
+  font-weight: bold;
+}
+
+#prices h2 i {
+  padding: 0 5px;
+  font-size: 23px;
+}
+
+#prices h2 button {
+  position: relative;
+  left: 50px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#prices h2 .price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#prices .price-box:hover {
+  transform: scale(1.05);
+}
+
+#prices .price-text {
+  margin-top: 30px;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
