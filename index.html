@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona WWW</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/sass/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/sass/animate.css">
@@ -54,32 +55,32 @@
                   <h2>O nas</h2>
                   <div class="underline"></div>
                   <div class="row">
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation"data-animation='bounceIn' data-delay=".1">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility"data-animation='bounceIn' data-delay=".1">
                         <p><i class="fas fa-mobile-alt"></i></p>
                         <h3>mobile gaming</h3>
                         <p>Tworzymy gry na urządzenia mobilne!</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation"data-animation='bounceIn' data-delay=".2s">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility"data-animation='bounceIn' data-delay=".2s">
                         <p><i class="fas fa-desktop"></i></p>
                         <h3>desktop gaming</h3>
                         <p>Tworzymy gry na PC!</p>
                     </div>
-                    <div id="hid" class="col-sm-6 col-md-4 text-center aboutus-hover os-animation"data-animation='bounceIn' data-delay=".3s">
+                    <div id="hid" class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility"data-animation='bounceIn' data-delay=".3s">
                         <p><i class="fas fa-file-code"></i></p>
                         <h3>najwyższe standardy</h3>
                         <p>Zachowujemy najwyższe standardy podczas posania kodu.</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation"data-animation='bounceIn' data-delay=".4s">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility"data-animation='bounceIn' data-delay=".4s">
                         <p><i class="fas fa-paw"></i></p>
                         <h3>kochamy zwierzęta!</h3>bounce
                         <p>Wszystkie nasze gry są bezpieczne dla środowiska. :)</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation"data-animation='bounceIn' data-delay=".5s">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility"data-animation='bounceIn' data-delay=".5s">
                         <p><i class="fas fa-hamburger"></i></p>
                         <h3>lubimy dobre jedzenie</h3>
                         <p>Lubimy dobrze zjeść przed przystąpieniem do naszych zadań.</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation"data-animation='bounceIn' data-delay=".6s">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility"data-animation='bounceIn' data-delay=".6s">
                         <p><i class="fas fa-glass-cheers"></i></p>
                         <h3>Świetne relacje</h3>
                         <p>Zachowujemy świetne relacje z naszymi klientami!</p>
@@ -89,33 +90,69 @@
           </div>
       </section>
       <section id="aboutus-hero">
-          <div class="bg-light p-5">
+          <div class=" jumbotron bg-light p-5 ">
               <div class="about-shadow"></div>
               <div class="wrapper">
-                <h2>tworzymy gry na platformy</h2>
-                <div class="underline"></div>
+                <h2 class=" os-animation visibility" data-animation="fadeIn" >tworzymy gry na platformy</h2>
+                <div class="underline os-animation visibility" data-animation="fadeIn" data-delay=".1s"></div>
                 <div class="row">
-                    <div class=" col-sm-6 col-md-4 text-center text-center">
+                    <div class=" col-lg-4 text-center text-center about-hero-item os-animation visibility" data-animation="bounceInUp" data-delay=".2s">
                         <h3>PC</h3>
                         <p><i class="fab fa-steam"></i></p>
                         <p>Graj ze znajomymi na swoim blaszaku!</p>
                     </div>
-                    <div class=" col-sm-6 col-md-4 text-center">
+                    <div class=" col-lg-4 text-center about-hero-item os-animation visibility" data-animation="bounceInUp" data-delay=".3s">
                         <h3>PlayStation</h3>
                         <p><i class="fab fa-playstation"></i></p>
                         <p>Gry świetnie prezentują się na konsoli od Sony!</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center">
+                    <div class="col-lg-4 text-center about-hero-item os-animation visibility" data-animation="bounceInUp" data-delay=".4s">
                         <h3>Xbox</h3>
                         <p><i class="fab fa-xbox"></i></p>
-                        <p>Fani Xboxa spędzą z nami mnĂłstwo godzin!</p>
+                        <p>Fani Xboxa spędzą z nami mnóstwo godzin!</p>
                     </div>
                 </div>
               </div>
-
-          </div>
-          
+          </div> 
       </section>
+      <section id="portfolio" class="scroll-fix">
+        <div class="bg-light ">
+            <h2>portfolio</h2>
+            <div class="underline"></div>
+            <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/car.jpg" class="d-block w-100" alt="zdjęcie samochodu">
+                    <div class="carousel-caption d-none d-lg-block">
+                      <h5>Racing GT</h5>
+                      <p>Szybkie samochody, piękne krajobtazy, najlepsze tory świata - to wszystko znajdziecie w naszej wyścigowej grze Racing GT!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/gaming.jpg" class="d-block w-100" alt="zdjęcie graczy">
+                    <div class="carousel-caption d-none d-lg-block">
+                      <h5>Pro-X Football</h5>
+                      <p>Stworzyliśmy jedną z najlepszych gier o piłce nożnej na świecie, w którą zagrało już ponad 10 milionów osób!</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+    
+            
+        </div>
+    </section>
   </main>
 
   <div style="height: 100vh;"></div>
@@ -133,5 +170,7 @@
   <script src="/js/animation.js"></script>
   <script src="/js/jquery.waypoints.min"></script>
   <script src="/js/main.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

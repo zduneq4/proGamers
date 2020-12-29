@@ -8,4 +8,48 @@ header .fa-caret-down {
   animation: bounce 1.6s infinite;
   color: #fff;
 }
+
+#portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+#portfolio .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+#portfolio .carousel li {
+  position: relative;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+#portfolio h2 {
+  padding-top: 40px;
+  position: relative;
+  top: 1px;
+}
+
+#portfolio .underline {
+  position: relative;
+  top: 1px;
+}
 /*# sourceMappingURL=large.css.map */

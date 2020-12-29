@@ -42,6 +42,10 @@ body {
   margin-top: -66px;
 }
 
+.visibility {
+  visibility: hidden;
+}
+
 nav {
   text-transform: uppercase;
   transition: background-color .6s;
@@ -139,7 +143,6 @@ header .fa-caret-down {
 
 #aboutus .aboutus-hover {
   transition: color 0.3s;
-  visibility: hidden;
 }
 
 #aboutus .aboutus-hover:hover {
@@ -148,14 +151,28 @@ header .fa-caret-down {
 
 #aboutus-hero {
   color: #ddd;
+  overflow: hidden;
 }
 
 #aboutus-hero .bg-light {
+  padding: 80px 0 !important;
   position: relative;
   background-image: url("../img/about-hero.jpg");
   background-position: center;
   background-size: cover;
   z-index: 0;
+}
+
+#aboutus-hero .bg-light h2 {
+  font-size: 32px;
+}
+
+#aboutus-hero .bg-light i {
+  font-size: 35px;
+}
+
+#aboutus-hero .bg-light p {
+  font-size: 14px;
 }
 
 #aboutus-hero .about-shadow {
@@ -168,12 +185,38 @@ header .fa-caret-down {
   z-index: -10;
 }
 
+#aboutus-hero .about-hero-item {
+  margin: 10px 0;
+}
+
+#portfolio h2 {
+  position: relative;
+  bottom: 30px;
+  padding-top: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#portfolio .underline {
+  position: relative;
+  bottom: 30px;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
   }
   header .hero-text p {
     font-size: 16px;
+  }
+  #aboutus-hero .bg-light h2 {
+    font-size: 36px;
+  }
+  #aboutus-hero .bg-light h3 {
+    font-size: 32px;
+  }
+  #aboutus-hero .bg-light p {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=main.css.map */
