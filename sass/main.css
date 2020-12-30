@@ -345,6 +345,66 @@ header .fa-caret-down {
   text-transform: uppercase;
 }
 
+#contact .bg-light {
+  position: relative;
+  background-image: url("../img/contact-bg.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+#contact .bg-light h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+#contact .bg-light .underline {
+  background-color: #ccc;
+}
+
+#contact .contact-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 9, 27, 0.85);
+  z-index: -10;
+}
+
+#contact .contact-us {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+#contact .contact-us .contact-item {
+  margin: 30px 0;
+}
+
+#contact .contact-us .contact-item h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+#contact .contact-us .contact-item .social-media {
+  font-size: 26px;
+}
+
+#contact .contact-us .contact-item .social-media a {
+  padding: 10px;
+  color: #ffffff;
+  text-shadow: 0 0 5px black;
+  transition: color 0.3s;
+}
+
+#contact .contact-us .contact-item .social-media a:hover {
+  color: #ccc;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
@@ -363,7 +423,7 @@ header .fa-caret-down {
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   #team .card-text {
     font-size: 12px;
   }
