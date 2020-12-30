@@ -59,6 +59,8 @@ nav
 
     .active
         color: $color-blue
+    .nav-item
+        margin-left: 6px
 
 .shadow-bg
     background-color: $shadow
@@ -205,15 +207,83 @@ header
             padding: 10px 20px
             text-transform: uppercase
 
-        .price
-            font-size: 30px
-            font-weight: bold
+    .price
+        font-size: 30px
+        font-weight: bold
 
     .price-box:hover
         transform: scale(1.05)
 
     .price-text
         margin-top: 30px
+
+#team
+    .bg-light
+        position: relative
+        background-image: url('../img/room-hero.jpg')
+        background-attachment: fixed
+        background-size: cover
+        z-index: 0
+
+        h2
+            color: #ddd
+            text-align: center
+
+    .shadow-team
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.8)
+
+    .card
+        transition: transform .3s
+        margin: 15px
+
+        img
+            height: 230px
+            object-fit:
+
+        i
+            padding: 10px 20px
+
+        .card-footer
+            margin-left: 0
+            margin-right: 0
+
+    .card:hover
+        transform: scale(.96)
+
+    .card-body
+        height: 160px
+
+    .card-title
+        text-transform: uppercase
+        font-weight: bold
+        text-align: center
+
+    .card-text
+        font-size: 14px
+        text-align: center
+
+#achievements
+    h2
+        text-align: center
+
+    .achievement
+        text-align: center
+
+    i
+        padding: 10px
+        font-size: 48px
+        color: #ffffff
+        text-shadow: 0 0 5px black
+    .achievement-number
+        font-size: 22px
+    .achievement-text
+        font-size: 13ox
+        text-transform: uppercase
 
 @media (min-width: 375px)
     header
@@ -231,3 +301,17 @@ header
                 font-size: 32px
             p
                 font-size: 18px
+
+@media  (max-width: 320px  )
+    #team
+        .card-text
+            font-size: 12px
+        .card-title
+            font-size: 17px
+        .card
+            img
+
+@media (min-width: 500px)
+    #team
+        .card-body
+            height: 120px

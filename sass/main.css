@@ -72,6 +72,10 @@ nav .active {
   color: #039dff;
 }
 
+nav .nav-item {
+  margin-left: 6px;
+}
+
 .shadow-bg {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -245,7 +249,7 @@ header .fa-caret-down {
   text-transform: uppercase;
 }
 
-#prices h2 .price {
+#prices .price {
   font-size: 30px;
   font-weight: bold;
 }
@@ -256,6 +260,89 @@ header .fa-caret-down {
 
 #prices .price-text {
   margin-top: 30px;
+}
+
+#team .bg-light {
+  position: relative;
+  background-image: url("../img/room-hero.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+#team .bg-light h2 {
+  color: #ddd;
+  text-align: center;
+}
+
+#team .shadow-team {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#team .card {
+  transition: transform .3s;
+  margin: 15px;
+}
+
+#team .card img {
+  height: 230px;
+}
+
+#team .card i {
+  padding: 10px 20px;
+}
+
+#team .card .card-footer {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#team .card:hover {
+  transform: scale(0.96);
+}
+
+#team .card-body {
+  height: 160px;
+}
+
+#team .card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+#team .card-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+#achievements h2 {
+  text-align: center;
+}
+
+#achievements .achievement {
+  text-align: center;
+}
+
+#achievements i {
+  padding: 10px;
+  font-size: 48px;
+  color: #ffffff;
+  text-shadow: 0 0 5px black;
+}
+
+#achievements .achievement-number {
+  font-size: 22px;
+}
+
+#achievements .achievement-text {
+  font-size: 13ox;
+  text-transform: uppercase;
 }
 
 @media (min-width: 375px) {
@@ -273,6 +360,21 @@ header .fa-caret-down {
   }
   #aboutus-hero .bg-light p {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  #team .card-text {
+    font-size: 12px;
+  }
+  #team .card-title {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 500px) {
+  #team .card-body {
+    height: 120px;
   }
 }
 /*# sourceMappingURL=main.css.map */

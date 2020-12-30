@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     window.addEventListener('scroll', addShadow)
 
-    $(document).ready(function () {
+   //skrypt naprawia nawigację (zamyka sie po clicku gdziekolwiek na mobile)
         $(document).click(function (event) {
             var clickover = $(event.target);
             var _opened = $(".navbar-collapse").hasClass("show");
@@ -19,5 +19,35 @@ document.addEventListener('DOMContentLoaded', function () {
                 $(".navbar-toggler").click();
             }
         });
-    });
+    
+
+   //slickJS
+    $('.team-carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        mobileFirst: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 4
+                }
+            }
+        ]
+        });
+      
 });

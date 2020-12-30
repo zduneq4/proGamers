@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/sass/animate.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="/sass/main.css">
     <link rel="stylesheet" media="screen and (min-width: 576px)" href="/sass/small.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="/sass/medium.css">
@@ -44,7 +46,7 @@
               <p class="os-animation" data-animation='bounceInUp' data-delay='.6s'>W miejscu, gdzie gry tworzymy z pasją!</p>  
               <a class="btn btn-outline-light os-animation" href='#aboutus' data-animation='bounceInUp' data-delay='.9s'>poznaj nas!</a>  
           </div>
-          <a href="#aboutus"><i class="fas fa-caret-down"></i> </a>           
+          <a href="#aboutus"><i class="fas fa-caret-down"></i></a>           
       </div>
   </header>
 
@@ -121,7 +123,7 @@
             <div class="underline"></div>
 <!-- PORTFOLIO NA MOBILE  -->
             <div class="wrapper">
-            <div class="row row-cols-1 row-cols-md-2 g-4 d-lg-none cards">
+            <div class="row row-cols-1 row-cols-md-2 g-4 d-lg-none cards visibility os-animation" data-animation="fadeInLeft" data-delay=".3s">
                 <div class="col">
                 <div class="card h-100">
                     <img src="/img/car.jpg" class="card-img-top" alt="okładka gry wyścigowej">
@@ -147,7 +149,7 @@
             </div>
         </div> 
 <!-- PORTFOLIO NA DESKTOPY -->
-            <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block os-animation visibility" data-animation="fadeInLeft" data-delay=".3s" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
                   <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
@@ -197,7 +199,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-4">
-                    <div class="price-box">
+                    <div class="price-box bg-dark text-light">
                         <h3>mobile & pc</h3>
                         <hr>
                         <p><span>Urządzenia:</span> <i class="fas fa-mobile-alt"></i> <i class="fas fa-desktop"></i>
@@ -231,6 +233,115 @@
             </div>
         </div>
     </section>
+    <section id="team" class="scroll-fix">
+        <div class="bg-light p-5">
+            <div class="shadow-team"></div>
+            <h2 class="os-animation visibility" data-animation="fadeIn">team</h2>
+            <div class="underline os-animation visibility" data-animation="fadeIn" data-delay=".1s"></div>
+            <div class="card-group wrapper team-carousel visibility os-animation"data-animation="bounceInRight" data-delay=".2s" >
+                <div class="card">
+                  <img src="/img/team/adult-2449725_1920.jpg" class="card-img-top" alt="Zdjęcie prezesa">
+                  <div class="card-body">
+                    <h5 class="card-title">ceo</h5>
+                    <p class="card-text">Szef szefów. Nikt nie zna jego imienia. Powdładni mówią na niego "Pan
+                        Prezes".</p>
+                  </div>
+                  <div class="card-footer d-flex justify-content-around">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/team/woman-1320810_1920.jpg" class="card-img-top" alt="Zdjęcie osoby z HR">
+                  <div class="card-body">
+                    <h5 class="card-title">hr</h5>
+                    <p class="card-text">Paula zajmuje się rekrutowaniem młodych i gniewnych talentów.</p>
+                  </div>
+                  <div class="card-footer d-flex justify-content-around">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/img/team/building-2762241_1920.jpg" class="card-img-top" alt="Na zdjęciu widoczna osoba, która zajmuje się grafiką komputerową">
+                  <div class="card-body">
+                    <h5 class="card-title">grafik</h5>
+                    <p class="card-text">Pan Wiesio jest grafikiem z długoletnim stażem na L4.</p>
+                  </div>
+                  <div class="card-footer d-flex justify-content-around">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/img/team/entrepreneur-2326419_1920.jpg" class="card-img-top" alt="Zdjęcie tajemniczego Tomka">
+                  <div class="card-body">
+                    <h5 class="card-title">tomek</h5>
+                    <p class="card-text">To jest Tomek. Nikt oprócz prezesa nie wie, czym zajmuje się Tomek.</p>
+                  </div>
+                  <div class="card-footer d-flex justify-content-around">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/img/team/women-1209678_1920.jpg" class="card-img-top" alt="Zdjęcie kobiet pracujących w dziale jakości">
+                  <div class="card-body">
+                    <h5 class="card-title">dział jakości</h5>
+                    <p class="card-text">Ania i Hania sprawdzają starannie każdy nasz produkt.</p>
+                  </div>
+                  <div class="card-footer d-flex justify-content-around">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="achievements">
+      <div class="bg-light p-5">
+        <h2 class="os-animation visibility" data-animation="fadeIn">ceny</h2>
+          <div class="underline os-animation visibility" data-animation="fadeIn" data-delay=".1s"></div>
+
+          <div class="wrapper row achievement-list">
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".2s">
+              <i class="fas fa-thumbs-up"></i>
+              <p class="achievement-number">100%</p>
+              <p class="achievement-text">zadowolonych klientów</p>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".4s">
+              <i class="fas fa-trophy"></i>
+              <p class="achievement-number">37</p>
+              <p class="achievement-text">zdobytych nagród</p>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".25s">
+              <i class="fas fa-user-friends"></i>
+              <p class="achievement-number">143</p>
+              <p class="achievement-text">pracowników</p>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".1s">
+              <i class="far fa-building"></i>
+              <p class="achievement-number">7</p>
+              <p class="achievement-text">biur zlokalizaowanych na całym świecie</p>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".35s">
+              <i class="fas fa-dice"></i>
+              <p class="achievement-number">58</p>
+              <p class="achievement-text">stworzonych gier</p>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".3s">
+              <i class="fas fa-share-alt"></i>
+              <p class="achievement-number">80.000</p>
+              <p class="achievement-text">fanów w mediach społecznościowych</p>
+            </div>
+          </div>
+      </div>
+    </section>
   </main>
 
   <div style="height: 100vh;"></div>
@@ -247,6 +358,7 @@
   </script>
   <script src="/js/animation.js"></script>
   <script src="/js/jquery.waypoints.min"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="/js/main.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
